@@ -1,3 +1,4 @@
+//This example shows structs, struct embedding and methods
 package main
 
 import (
@@ -51,6 +52,8 @@ func main() {
 	fmt.Printf("%d = %d\n", (*sbox).Box.Width, (*sbox).Width)
 
 	//struct and pointer to struct field and method access is done with dot
-	fmt.Printf("StuffedBox volume is %f cubic meters\n", sbox.Volume())
+	fmt.Printf("StuffedBox is stuffed with %s and its volume is %f cubic meters\n",
+		sbox.Contents,
+		sbox.Volume())
 
 }

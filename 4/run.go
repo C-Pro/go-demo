@@ -1,3 +1,4 @@
+//This example shows arrays, slices, maps, defer, interface{} and reflection
 package main
 
 import (
@@ -11,6 +12,8 @@ var (
 	mymap   map[string]string
 )
 
+//Empty interface can hold any type
+//and can be used to create somewhat "generic" functions
 func printit(a interface{}) {
 	defer fmt.Println("===END===")
 	fmt.Println("==BEGIN==")
