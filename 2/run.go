@@ -1,3 +1,6 @@
+//This example shows how to create packages
+//export and use their contents
+//and do some unit testing
 package main
 
 //Go promotes open source

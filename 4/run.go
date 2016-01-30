@@ -52,6 +52,7 @@ func main() {
 	printit(myslice)
 	myslice = append(myslice, "Odd again!")
 	printit(myslice)
+
 	mymap = make(map[string]string, 2)
 	mymap["test"] = "value"
 	mymap["foo"] = "bar"
