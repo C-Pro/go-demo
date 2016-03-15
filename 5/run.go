@@ -6,18 +6,18 @@ import (
 	"math"
 )
 
-//Struct example
+//Box is a struct example
 type Box struct {
 	Width, Height, Depth int
 }
 
-//Struct embedding example
+//StuffedBox is struct embedding example
 type StuffedBox struct {
 	Box
 	Contents string
 }
 
-//Struct method and pointer example
+//Volume is a struct method and pointer example
 func (b *Box) Volume() float64 {
 	//Notice type conversion  to float64 here
 	//Go does not have implicit type conversions!
