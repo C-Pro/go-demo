@@ -1,0 +1,78 @@
+The Go programming language
+Introduction
+20 Jan 2017
+Tags: go, golang, programming, tutorial, beginner
+
+Sergey Melekhin
+Team lead, Ramax Intl. GDG Vladivostok
+sergey@melekhin.me
+@cpro29a
+
+* First things first
+Go mascot: The Gopher by Renée French
+.image https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Go_gopher_mascot_bw.png/480px-Go_gopher_mascot_bw.png
+
+* Origin of Go
+.image https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Google_%22G%22_Logo.svg/480px-Google_%22G%22_Logo.svg.png
+
+* Hello, World!
+.play 1/hello.go
+Notice how go does not use semicolons to mark line ends.
+
+* Packages
+.play 2/run.go
+
+* Packages 2
+.code -edit -numbers 2/mypack/getname.go
+Notice CamelCase function name. Only symbols with name starting with capital letter are exported from a package.
+
+* Testing
+.code -edit -numbers 2/mypack/getname_test.go
+Standard tests are run with the `go test` command.
+
+* Return values
+.code -edit -numbers 3/run.go /func twoResults/,/^}/
+
+* Error handling
+.play 3/run.go /const filename/,/^}/
+
+* Container types
+.code -numbers 4/run.go /^var/,/^\)/
+
+* Reflection
+.code -numbers 4/run.go /func printit/,/^}/
+
+* Lets try it!
+.play 4/run.go /func main/,/^}/
+
+* Structs
+.code -numbers 5/run.go /Box is/,/^}/
+.code -numbers 5/run.go /StuffedBox is/,/^}/
+
+* Struct methods
+.code -numbers 5/run.go /Volume is/,/^}/
+
+* Struct examples pt.1
+.code -numbers 5/run.go /var \(/,/Teddy bears"}/
+
+* Struct examples pt.2
+.code -numbers 5/run.go /We can access/,/Volume\(\)\)/
+
+* Run!
+.code 5/run.go /func main/,/$/
+\...
+.play 5/run.go /StuffedBox is/,/^}/
+
+
+* Channels and goroutines
+.code -numbers 6/run.go /c :=/,/^\t}/
+
+* Goroutine function
+.code -numbers 6/run.go /Sums/,/^}/
+
+* Wait and join goroutines
+.code -numbers 6/run.go /i \< numGoroutines/,/^}/
+
+* Try before u buy!
+.play 6/run.go /func main/,/start :=/
+

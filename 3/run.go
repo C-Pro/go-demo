@@ -10,14 +10,18 @@ import (
 //This function returns two values at a time
 //We could just pass them by reference
 //but I wanted to show off this first :)
-func twoResults(x, y int) (a, b int) {
+func twoResults(x, y int) (int, int) {
+	var (
+		a int
+		b int
+	)
 	a = x + 1
 	b = y + 2
-	return
+	return a, b
 }
 
 //Constant type is inferred from value
-const filename = "nonexistent.file"
+const filename = "run.go"
 
 func main() {
 	//multiple assignment syntax

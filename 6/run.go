@@ -24,7 +24,7 @@ func sum(a *[]int64, f, t int, c chan int64) {
 func main() {
 
 	//alter this value to set number of concurrent goroutines
-	numGoroutines := 1
+	numGoroutines := 10
 	//alter this to change amount of data processed
 	//be careful 1000 * 1000 * 100 of int64 is already 762Mb
 	dataSize := 1000 * 1000 * 100
