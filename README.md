@@ -10,3 +10,5 @@ Golang demo for GDG Vladivostok
 * Ex4 - Arrays, slices, maps, defer, interface{} and reflection
 * Ex5 - Structs, embedding and methods
 * Ex6 - Goroutines and channels
+
+[Slides](http://talks.godoc.org/github.com/C-Pro/go-demo/present.slide)
