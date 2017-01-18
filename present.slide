@@ -15,12 +15,17 @@ Go mascot: The Gopher by Renée French
 * Origin of Go
 .image https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Google_%22G%22_Logo.svg/480px-Google_%22G%22_Logo.svg.png
 
+* Worldwide adoption
+Aerospike, BBC, Bitbucket, Booking.com, Core OS, Datadog, Digital Ocean, Docker, Dropbox, Facebook, Getty Images, GitHub, GOV.UK, Google, Heroku, IBM, Intel, InfluxDB, Medium, MongoDB, Mozilla services, Netflix, New York Times, pool.ntp.org, Rackspace, SoundCloud, SpaceX, Square, Stack Exchange, Tumblr, Twitch, Twitter, Uber, VMWare, YouTube ...
+.link https://github.com/golang/go/wiki/GoUsers Big List Here
+
 * Hello, World!
 .play 1/hello.go
 Notice how go does not use semicolons to mark line ends.
 
 * Packages
 .play 2/run.go
+_This_example_will_not_run_online,_you_need_to_checkout_ [[https://github.com/C-Pro/go-demo]] _and_run_ `go`present` _manually._
 
 * Packages 2
 .code -edit -numbers 2/mypack/getname.go
@@ -28,7 +33,7 @@ Notice CamelCase function name. Only symbols with name starting with capital let
 
 * Testing
 .code -edit -numbers 2/mypack/getname_test.go
-Standard tests are run with the `go test` command.
+Standard tests are run with the `go`test` command.
 
 * Return values
 .code -edit -numbers 3/run.go /func twoResults/,/^}/
@@ -75,4 +80,14 @@ Standard tests are run with the `go test` command.
 
 * Try before u buy!
 .play 6/run.go /func main/,/start :=/
+_Default_ `dataSize` _is_too_big_to_execute_online._You_can_edit_it_right_here._
+
+* Some links to get you started
+- [[https://golang.org/][golang.org]]
+- [[https://tour.golang.org][tour.golang.org]]
+- [[https://golang.org/doc/effective_go.html][Effective Go]]
+- [[https://github.com/golang/go/wiki/CodeReviewComments][Code Review Coments]]
+- [[https://github.com/C-Pro/go-demo][Repo with this slides and code examples]]
+Link to this slides online: [[http://bit.ly/golang_vl][bit.ly/golang_vl]]
+
 
