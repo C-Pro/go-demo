@@ -4,6 +4,7 @@ go:
     - 1.7
 install:
 - go get -t -v ./...
+- go get github.com/golang/lint/golint
 
 script:
     go test -v ./...
