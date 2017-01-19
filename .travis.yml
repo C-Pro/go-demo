@@ -5,6 +5,7 @@ go:
 install:
     - go get -t -v ./...
     - go get github.com/golang/lint/golint
+    - go get golang.org/x/tools/cmd/goimports
 
 script:
     - go test -v ./...
