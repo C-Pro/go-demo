@@ -8,5 +8,7 @@ install:
 
 script:
     go test -v ./...
-    - go vet ./...
-    - GOFMT=$(gofmt -d -s .) && echo $GOFMT && test -z "$GOFMT"
+    - GOVET=$(go vet ./...) && echo $GOVET && test -z "$GOVET"
+    - GOLINT=$(golint ./...) && echo $GOLINT && test -z "$GOLINT"
+    - GOFMT=$(goimports -d .) && echo $GOFMT && test -z "$GOFMT"
+
