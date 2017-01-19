@@ -3,11 +3,11 @@ language: go
 go:
     - 1.7
 install:
-- go get -t -v ./...
-- go get github.com/golang/lint/golint
+    - go get -t -v ./...
+    - go get github.com/golang/lint/golint
 
 script:
-    go test -v ./...
+    - go test -v ./...
     - GOVET=$(go vet ./...) && echo $GOVET && test -z "$GOVET"
     - GOLINT=$(golint ./...) && echo $GOLINT && test -z "$GOLINT"
     - GOFMT=$(goimports -d .) && echo $GOFMT && test -z "$GOFMT"
