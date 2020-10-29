@@ -5,6 +5,6 @@ package mypack
 //Functions, Types, or even Type fields which start with lowercase letters will
 //be private
 func GetName() string {
-	name := "Мумий Тролль"
+	name := "Муммий Тролль"
 	return name
 }

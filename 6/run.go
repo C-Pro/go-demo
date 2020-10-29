@@ -42,7 +42,7 @@ func main() {
 		if i < numGoroutines-1 {
 			go sum(&a, i*chunkSize, i*chunkSize+chunkSize, c)
 		} else {
-			//Last goroutine takes chunk_size + datasize%num_goroutines
+			//Last goroutine takes chunkSize + dataSize%numGoroutines
 			go sum(&a, i*chunkSize, dataSize, c)
 		}
 
