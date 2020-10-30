@@ -24,11 +24,11 @@ func sum(a *[]int64, f, t int, c chan int64) {
 func main() {
 
 	//alter this value to set number of concurrent goroutines
-	numGoroutines := 10
+	const numGoroutines = 1000
 	//alter this to change amount of data processed
 	//be careful 1000 * 1000 * 100 of int64 is already 762Mb
-	dataSize := 1000 * 1000 * 100
-	chunkSize := dataSize / numGoroutines
+	const dataSize = 1000 * 1000 * 100
+	const chunkSize = dataSize / numGoroutines
 
 	a := make([]int64, dataSize)
 	for i := 0; i < len(a); i++ {
@@ -54,5 +54,5 @@ func main() {
 		s += <-c
 	}
 	fmt.Printf("Sum is %d\n", s)
-	fmt.Printf("Time elapsed: %f sec\n", time.Now().Sub(start).Seconds())
+	fmt.Printf("Time elapsed: %f sec\n", time.Since(start).Seconds())
 }

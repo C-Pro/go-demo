@@ -1,7 +1,7 @@
 language: go
 
 go:
-    - 1.7
+    - 1.15
 install:
     - go get -t -v ./...
     - go get github.com/golang/lint/golint
@@ -12,4 +12,3 @@ script:
     - GOVET=$(go vet ./...) && echo $GOVET && test -z "$GOVET"
     - GOLINT=$(golint ./...) && echo $GOLINT && test -z "$GOLINT"
     - GOFMT=$(goimports -d .) && echo $GOFMT && test -z "$GOFMT"
-
